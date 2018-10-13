@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+</head>
+<body>
+	<section>
+		<h2>Sign Up For a Class Today</h2>	
+		<fieldset>	
+			<form action="student-response.jsp">	
+				<div>
+					<h3><u>Basic Info</u></h3>
+				</div>						
+				<div>
+					<label for="firstName">First Name *</label>
+					<br>
+					<input type="text" name="firstName" required>
+				</div>
+				<br>
+				<div>
+					<label for="lastName">Last Name *</label>
+					<br>
+					<input type="text" name="lastName" required>
+				</div>	
+				<br>
+				<div>					
+					<label>Country *
+						<br>					
+						<select name="country" required>
+							<option value="0" selected disabled hidden>--select--</option>
+							<option value="Brazil">Brazil</option>
+							<option value="France">France</option>
+							<option value="Germany">Germany</option>
+							<option value="India">India</option>	
+							<option value="Turkey">Turkey</option>
+							<option value="United Kingdom">United Kingdom</option>
+							<option value="United States of America">United States of America</option>						
+						</select>
+					</label>
+				</div>
+				<br>
+				<div>
+					<p>Favorite Programming Language</p>					
+					<label for="programming-experience-yes">Yes</label>
+					<input type="radio" name="programming-experience" value="yes">
+					<label for="programming-experience-no">No</label>
+					<input type="radio" name="programming-experience" value="no">
+				</div>		
+				<br>		
+				<div>
+					<input type="submit" value="Submit">	
+				</div>
+			</form>
+		</fieldset>
+	</section>	
+</body>
+</html>
