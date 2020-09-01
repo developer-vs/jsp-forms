@@ -1,1 +1,2 @@
-# JSP/Servlet (Student Form Application)
+# Student Form Application
+### by using JavaServer Pages (JSP) and Bootstrap technologies

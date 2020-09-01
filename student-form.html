@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student Registration Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Student Registration Form</title>
+<link href="webjars/bootstrap/4.5.2/css/bootstrap.min.css"
+	rel="stylesheet">
 </head>
-<body>
-	<section>
-		<h2>Sign Up For a Class Today</h2>	
-		<fieldset>	
-			<form action="student-response.jsp">	
-				<div>
-					<h3>Basic Info</h3>
-				</div>						
-				<div>
-					<label for="firstName">First Name *</label>
-					<br>
-					<input type="text" name="firstName" required>
-				</div>
-				<br>
-				<div>
-					<label for="lastName">Last Name *</label>
-					<br>
-					<input type="text" name="lastName" required>
-				</div>	
-				<br>
-				<div>					
-					<label>Country *
-						<br>					
-						<select name="country" required>
-							<option value="0" selected disabled hidden>--select--</option>
-							<option value="Brazil">Brazil</option>
-							<option value="France">France</option>
-							<option value="Germany">Germany</option>
-							<option value="India">India</option>
-							<option value="Turkey">Turkey</option>
-							<option value="United Kingdom">United Kingdom</option>
-							<option value="United States of America">United States of America</option>						
-						</select>
-					</label>
-				</div>
-				<br>
-				<div>
-					<p>Any Programming Experience?</p>					
-					<label for="programmingExperience">Yes</label>
-					<input type="radio" name="programmingExperience" value="Yes">
-					<label for="programmingExperience">No</label>
-					<input type="radio" name="programmingExperience" value="No">
-				</div>		
-				<br>	
-				<div>
-					<p>Favorite Programming Languages:</p>					
-					<label for="programmingELanguage">Java</label>
-					<input type="checkbox" name="programmingLanguage" value="Java">
-					<label for="programmingLanguage">C#</label>
-					<input type="checkbox" name="programmingLanguage" value="C#">
-					<label for="programmingLanguage">PHP</label>
-					<input type="checkbox" name="programmingLanguage" value="PHP">
-					<label for="programmingLanguage">Ruby</label>
-					<input type="checkbox" name="programmingLanguage" value="Ruby">
-				</div>		
-				<br>	
-				<div>
-					<input type="submit" value="Submit">
-				</div>
-			</form>
-		</fieldset>
-	</section>	
+<body class="bg-light">
+	<div class="container p-4">
+		<div class="row">
+			<section>
+				<h2>Sign Up For a Class Today</h2>
+				<fieldset>
+					<form action="student-response.jsp">
+						<div>
+							<h3>Basic Info</h3>
+						</div>
+						<div class="form-group">
+							<label for="firstName">First Name *</label>
+							<input type="text" class="form-control" name="firstName" required>
+						</div>
+						<br>
+						<div class="form-group">
+							<label for="lastName">Last Name *</label>
+							<input type="text" class="form-control" name="lastName" required>
+						</div>
+						<br>
+						<div>
+							<label>Country<br> 
+							<select name="country" class="custom-select">
+								<option value="0" selected disabled hidden>--select--</option>
+								<option value="Brazil">Brazil</option>
+								<option value="France">France</option>
+								<option value="Germany">Germany</option>
+								<option value="India">India</option>
+								<option value="Turkey">Turkey</option>
+								<option value="United Kingdom">United Kingdom</option>
+								<option value="United States of America">United States of America</option>
+							</select>
+							</label>
+						</div>
+						<br>
+						<p>Any Programming Experience?</p>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="radioYes" name="programmingExperience" value="Yes" class="custom-control-input">
+							<label class="custom-control-label" for="radioYes">Yes</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="radioNo" name="programmingExperience" value="No" class="custom-control-input">
+							<label class="custom-control-label" for="radioNo">No</label>
+						</div>
+						<br>						
+						<p>Favorite Programming Languages:</p>
+						<div class="custom-control custom-checkbox">
+						  <input type="checkbox" class="custom-control-input" name="programmingLanguage" id="java" value="Java">
+						  <label class="custom-control-label" for="java">Java</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+						  <input type="checkbox" class="custom-control-input" name="programmingLanguage" id="c#" value="C#">
+						  <label class="custom-control-label" for="c#">C#</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+						  <input type="checkbox" class="custom-control-input" name="programmingLanguage" id="php" value="PHP">
+						  <label class="custom-control-label" for="php">PHP</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+						  <input type="checkbox" class="custom-control-input" name="programmingLanguage" id="ruby" value="Ruby">
+						  <label class="custom-control-label" for="ruby">Ruby</label>
+						</div>
+						<br>
+						<div>
+							<input type="submit" value="Submit" class="btn btn-primary">
+						</div>
+					</form>
+				</fieldset>
+			</section>
+		</div>
+	</div>
+	<script src="webjars/jquery/3.5.1/jquery.slim.min.js"></script>
+	<script src="webjars/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
