@@ -43,7 +43,7 @@
 					}
 					out.println("</ul>");
 				} else {
-					out.println("<p>The student's favorite programming languages: not selected.</p>");
+					out.println("<p>" + msg + " not selected.</p>");
 				}
 			%>
 		</div>
